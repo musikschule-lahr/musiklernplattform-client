@@ -1,0 +1,43 @@
+const defaultTheme = {
+  font: {
+    sizes: {
+      h5: '19px',
+      body1: '17px',
+      cardTitle: '17px',
+      cardContent: '17px',
+      cardFooter: '14px',
+      navItem: '17px',
+    },
+  },
+  colors: {
+    primary: 'rgba(37, 37, 37, 1)',
+    primaryLight: 'rgba(86, 86, 86, 1)',
+    primaryHover: 'rgba(86, 86, 86, 0.2)',
+    secondary: 'rgba(60, 60, 60, 1)',
+    secondaryLight: 'rgba(190, 190, 190, 1)',
+    accent: 'rgba(10, 132, 255, 1)',
+    accentLight: 'rgba(10, 132, 255, .5)',
+    text: 'rgba(255, 255, 255, 1)',
+    textTransparent: 'rgba(235, 235, 245, 0.6)',
+    textLight: 'rgba(164, 164, 164, 1)',
+    textSubtitle: 'rgba(112, 112, 112, 1)',
+    card: 'rgba(112, 112, 112, 1)',
+    cardOutgoing: 'rgba(86, 86, 86, 1)',
+    cardIncoming: 'rgba(138, 138, 138, 1)',
+    chatCardDatetime: 'rgb(255,255,255)',
+    chatCardDatetimeText: 'rgb(177,215,255)',
+    chatRoom: 'rgb(255,255,255)',
+    chatRoomBadge: 'rgb(255,0,0)',
+    chatRoomBadgeOther: 'rgb(231,176,0)',
+    cardDarkened: 'rgb(100,100,100)',
+    cardGroupChat: 'rgba(211, 137, 51, 1)',
+    cardGroupChatDarkened: 'rgb(179,119,45)',
+    cardTimetableActive: 'rgba(21, 94, 209, 1)',
+    cardTimetableActiveDarkened: 'rgb(18, 77, 172)',
+    green: 'rgba(76, 217, 100)',
+    lightBorder: 'rgb(223,223,223)',
+    error: 'rgb(196,34,34)',
+  },
+};
+
+export default { defaultTheme };

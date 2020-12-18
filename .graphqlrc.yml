@@ -1,0 +1,6 @@
+schema: http://yourDomain/graphql
+extensions:
+    codegen:
+        generates:
+            ./eslint/schema.json:
+                - introspection

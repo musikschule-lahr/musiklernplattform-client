@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.apache.cordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>demo</name>
+    <description>
+        Sample decription.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <preference name="permissions" value="none" />
+    <preference name="Hostname" value="localhost" />
+    <access origin="*" />
+    <access origin="." />
+    <allow-navigation href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon src="resources/icon.png"/>
+
+    <platform name="android">
+        <preference name="AndroidLaunchMode" value="singleTask" />
+        <allow-intent href="market:*" />
+        <allow-navigation href="*" />
+        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+             <application android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round" />
+        </edit-config>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.RECORD_AUDIO" />
+            <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        </config-file>
+
+    </platform>
+    <platform name="ios">
+    <preference name="StatusBarStyle" value="lightcontent" />
+        <!-- iOS 8.0+ -->
+
+        <preference name="DisallowOverscroll" value="true" />
+            <allow-intent href="itms:*" />
+            <allow-intent href="itms-apps:*" />
+            <allow-navigation href="*" />
+            <preference name="AllowInlineMediaPlayback" value="true" />
+            <preference name="WKWebViewOnly" value="true" />
+            <feature name="CDVWKWebViewEngine">
+          <param name="ios-package" value="CDVWKWebViewEngine" />
+            </feature>
+            <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
+          <string>This app needs microphone access</string>
+            </config-file>
+        <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+    </platform>
+</widget>

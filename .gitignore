@@ -1,0 +1,15 @@
+node_modules
+www/index.bundle.js
+platforms
+plugins
+.vscode
+typings
+.idea/
+www/**/*.jpg
+www/**/*.png
+www/**/*.bmp
+www/**/*.svg
+www/**/keycloak.json
+!www/**/*icon.png
+!www/**/header/*.svg
+!www/**/background/*.jpg
